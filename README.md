@@ -47,7 +47,7 @@ Si se asume independencia de X y Y entonces:
 
 ![alt text](eq3.svg)
 
-Sustituyendo por los valores encontrados en la Parte 1 se tiene:
+Sustituyendo por los modelos para las funciones de densidad marginales de X y Y encontrados en la Parte 1 se tiene:
 
 ![alt text](eq4.svg)
 
