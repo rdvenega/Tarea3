@@ -57,7 +57,7 @@ Se obtuvieron los siguientes resultados:
 La **correlación** se obtuvo a partir de la ecuación: *R<sub>XY</sub> = E[XY]*, de donde se obtuvo el 
 siguiente resultado: 
 
-**Correlacion:  149.54281000000012**
+**Correlación:  149.54281000000012**
 
 Del valor obtenido se comprueba que no hay correlación entre las variables *X* y *Y*, pues si
 se toman los valores de la media para ambas funciones del modelo encontrado para cada funcion
@@ -67,7 +67,7 @@ muy cercano al obtenido por la correlación por lo cual se comprueba que no hay 
 las variables.
 
 La **covarianza** se obtuvo a partir de la ecuación: *C<sub>XY</sub> = E[(X-X&#772;)(Y-Y&#772;)]*,  para lo cual se utilizaron los 
-valores de la media (*&sigma;<sub>x</sub>*)  obtenidos de los **modelos de la Parte 1**, de donde se obtuvo el 
+valores de la media (*&mu;<sub>x</sub>* y *&mu;<sub>y</sub>*)  obtenidos de los **modelos de la Parte 1**, de donde se obtuvo el 
 siguiente resultado: 
 
 **Covarianza:  0.06669156297337238**
@@ -75,7 +75,7 @@ siguiente resultado:
 Del valor de covarianza obtenido se puede decir que este es muy cercano a cero, lo cual evidencia que 
 hay una independencia o no estan relacionadas las variables *X* y *Y*.
 
-El **coeficiente** de Pearson se obtuvo a partir de la ecuación: *&rho;<sub>XY</sub> = E[((X-X&#772;)/&sigma;<sub>x</sub>)(Y-Y&#772;)/&sigma;<sub>y</sub>))​]*, para lo cual se utilizaron los valores de media (*&mu;*) y desviación estandar (*&sigma;*) obtenidos de los **modelos de la Parte 1**, de donde se obtuvo el siguiente resultado: 
+El **coeficiente** de Pearson se obtuvo a partir de la ecuación: *&rho;<sub>XY</sub> = E[((X-X&#772;)/&sigma;<sub>x</sub>)(Y-Y&#772;)/&sigma;<sub>y</sub>))​]*, para lo cual se utilizaron los valores de media (*&mu;<sub>x</sub>* y *&mu;<sub>y</sub>*) y desviación estandar (*&sigma;<sub>x</sub>* y *&sigma;<sub>y</sub>*) obtenidos de los **modelos de la Parte 1**, de donde se obtuvo el siguiente resultado: 
 
 
 **Coef. Pearson:  0.003353772196327786**

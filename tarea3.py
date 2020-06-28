@@ -9,9 +9,13 @@ import matplotlib.pyplot as plt
 from scipy.optimize import curve_fit
 from mpl_toolkits.mplot3d import Axes3D
 
+# Definición de funciones útiles
+
+# Determina la función de densidad gaussiana 
 def gaussiana(x,mu,sigma):
     return 1/(np.sqrt(2*np.pi*sigma**2))*np.exp(-(x-mu)**2/(2*sigma**2))
 
+# Determina la correlacion de una matriz con dos variables 
 def correlacion(x_i,y_i,matriz):
     corr = 0
     for n in range(len(matriz)):
@@ -22,6 +26,7 @@ def correlacion(x_i,y_i,matriz):
         x_i=x_i+1
     return corr
 
+# Determina la covarianza de una matriz con dos variables 
 def covarianza(x_i,y_i,media_x,media_y, matriz):
     corr = 0
     for n in range(len(matriz)):
@@ -32,6 +37,7 @@ def covarianza(x_i,y_i,media_x,media_y, matriz):
         x_i=x_i+1
     return corr
 
+# Determina el coef. de Pearson de una matriz con dos variables 
 def coef_Pearson(x_i,y_i,media_x,media_y, sigma_x, sigma_y, matriz):
     corr = 0
     for n in range(len(matriz)):
@@ -61,6 +67,7 @@ matriz = np.array(datos_f, dtype='f')
 fx = np.sum(matriz, axis =1)
 x = np.linspace(5,15,11)
 
+# Parametros de ajuste para fX
 param1,_ = curve_fit(gaussiana, x, fx)
 
 print("\nfX: ", fx)
@@ -81,6 +88,7 @@ plt.clf()
 fy = np.sum(matriz, axis =0)
 y = np.linspace(5,25,21)
 
+# Parametros de ajuste para fY
 param2,_ = curve_fit(gaussiana, y, fy)
 
 print("\nfY: ", fy)
